@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
 
   def initialize
     Keycloak.proc_cookie_token = lambda do
-      cookies.permanent[:keycloak_token]
+      session[:keycloak_token]
     end
 
     super

@@ -3,7 +3,7 @@ class SessionController < ApplicationController
   def new; end
 
   def signin
-    cookies.permanent[:keycloak_token] = Keycloak::Client.get_token params[:email], params[:password]
+    session[:keycloak_token] = Keycloak::Client.get_token params[:email], params[:password]
     redirect_to root_path if Keycloak::Client.user_signed_in?
   end
 

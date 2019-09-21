@@ -1,0 +1,9 @@
+realm: 'harmoney-dev'
+auth-server-url: 'http://localhost:8080/auth'
+ssl-required: 'external'
+resource: 'rails_app'
+verify-token-audience: true
+credentials:
+  secret: '7cf4a5d2-8704-4451-86d9-c1c84e1341f8'
+confidential-port: 0
+policy-enforcer: {}

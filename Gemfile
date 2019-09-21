@@ -5,7 +5,8 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
+gem 'activerecord-session_store'
+gem 'delayed_job_active_record'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.5'
 # Use sqlite3 as the database for Active Record
@@ -54,7 +55,9 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Add authentication to applications and secure services with Keycloak
-gem 'keycloak', '~> 3.0.0'
+gem 'keycloak',
+    github: 'shiralwz/keycloak',
+    ref: '0238f80'
 
 # This gem overrides Rails' UJS behaviour to open up a Bootstrap Modal instead of the browser's built in confirm() dialog
 gem 'data-confirm-modal'
