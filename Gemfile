@@ -57,7 +57,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Add authentication to applications and secure services with Keycloak
 gem 'keycloak',
     github: 'shiralwz/keycloak',
-    ref: '0238f80'
+    ref: 'df9ef75'
 
 # This gem overrides Rails' UJS behaviour to open up a Bootstrap Modal instead of the browser's built in confirm() dialog
 gem 'data-confirm-modal'

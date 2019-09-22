@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   before_action :user_signed_in?
 
   def initialize
-    Keycloak.proc_cookie_token = lambda do
+    Keycloak.proc_session_token = lambda do
       session[:keycloak_token]
     end
 

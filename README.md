@@ -14,6 +14,13 @@ This is a simple example of how to build an application using [gem Keycloak](htt
 ## Step by Step
 
 **1.** Clone this project
+$ rails generate active_record:session_migration
+
+$ rake db:migrate
+
+$ vim config/initializers/session_store.rb
+Rails.application.config.session_store :active_record_store, :key => '_my_app_session'
+
 
 **2.** Create a new realm:
 

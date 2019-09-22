@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/shiralwz/keycloak.git
-  revision: 0238f80d0c65533681af5b6c81fcea989b0d8dc2
-  ref: 0238f80
+  revision: df9ef75eb13cb11d287a888a1dc326929633bb54
+  ref: df9ef75
   specs:
     keycloak (3.0.0)
       json
